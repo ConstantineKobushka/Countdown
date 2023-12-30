@@ -27,7 +27,7 @@ function updateCounter() {
   // Секундк всего, далее остаток от преобразования в минуты, секунд осталось
   const secondsLeft = Math.floor(diff / 1000) % 60;
 
-  console.log(daysLeft, hoursLeft, minutesLeft, secondsLeft);
+  // console.log(daysLeft, hoursLeft, minutesLeft, secondsLeft);
 
   days.innerText = daysLeft < 10 ? '0' + daysLeft : daysLeft;
   hours.innerText = hoursLeft < 10 ? '0' + hoursLeft : hoursLeft;
@@ -36,9 +36,10 @@ function updateCounter() {
 }
 
 // Запускаем расчет 1 раз в секунду (каждую секунду)
+updateCounter();
 setInterval(updateCounter, 1000);
 
-setTimeout(function () {
-  preloader.remove();
-  countdown.style.display = 'flex';
-}, 1000);
+// setTimeout(function () {
+//   preloader.remove();
+//   countdown.style.display = 'flex';
+// }, 1000);

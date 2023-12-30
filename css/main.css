@@ -77,7 +77,7 @@ body::after {
 }
 
 .countdown {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   /* text-shadow: 0 0 10px #5e6ca8;
@@ -106,7 +106,7 @@ body::after {
 
 /* Preloader */
 
-.lds-ripple {
+/* .lds-ripple {
   display: inline-block;
   position: relative;
   width: 80px;
@@ -137,7 +137,7 @@ body::after {
     height: 72px;
     opacity: 0;
   }
-}
+} */
 
 @media (max-width: 640px) {
   .title {
