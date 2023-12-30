@@ -48,7 +48,7 @@ body::after {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.countdown-wrapper {
+.countdown__wrapper {
   z-index: 1;
   position: relative;
   height: 90vh;
